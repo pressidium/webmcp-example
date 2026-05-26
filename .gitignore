@@ -1,0 +1,29 @@
+# OS files
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors / IDEs
+.cursor/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# Node (defensive — none in use today, but contributors may run tooling locally)
+node_modules/
+
+# Project-specific
+docs/

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact our Sales Team — WebMCP demo (Imperative API)</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <header class="card__header">
+        <h1>Contact our Sales Team</h1>
+        <p id="webmcp-status" class="status status--pending">Checking WebMCP support…</p>
+      </header>
+
+      <form id="sales-form-contact" class="contact-form js-company-form" novalidate>
+        <div class="grid">
+          <label class="field">
+            <span class="sr-only">Your full name</span>
+            <input type="text" name="fullname" placeholder="Your full name" autocomplete="name" required />
+          </label>
+
+          <label class="field">
+            <span class="sr-only">Your email address</span>
+            <input type="email" name="email" placeholder="Your email address" autocomplete="email" required />
+          </label>
+
+          <label class="field">
+            <span class="sr-only">Phone Number</span>
+            <input type="tel" name="phone" placeholder="Phone Number" autocomplete="tel" />
+          </label>
+
+          <label class="field">
+            <span class="sr-only">Website URL</span>
+            <input type="text" name="website" placeholder="Website URL" autocomplete="url" required />
+          </label>
+        </div>
+
+        <label class="checkbox">
+          <input type="checkbox" name="followup" />
+          <span>I would like a Follow Up Call</span>
+        </label>
+
+        <label class="field field--full">
+          <span class="sr-only">Where did you find us?</span>
+          <select name="referrer">
+            <option value="" disabled selected>Where did you find us?</option>
+            <option value="Search engine">Search engine</option>
+            <option value="Friend/Colleague recommendation">Friend/Colleague recommendation</option>
+            <option value="Review or other article">Review or other article</option>
+            <option value="Advertisement">Advertisement</option>
+            <option value="Pressidium Blog">Pressidium Blog</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+
+        <div class="grid">
+          <label class="field">
+            <span class="sr-only">Which Plan are you interested in?</span>
+            <select name="plan" required>
+              <option value="" disabled selected>Which Plan are you interested in?</option>
+              <option value="Enterprise Plans">Enterprise Plans</option>
+              <option value="Standard Plans">Standard Plans</option>
+              <option value="I am not sure">I am not sure</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span class="sr-only">Industry</span>
+            <select name="industry" required>
+              <option value="" disabled selected>Industry</option>
+              <option value="Agency">Agency</option>
+              <option value="Business / Brand">Business / Brand</option>
+              <option value="Woocommerce">Woocommerce</option>
+              <option value="University / Higher-Ed">University / Higher-Ed</option>
+              <option value="LMS / e-Learning">LMS / e-Learning</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="grid">
+          <label class="field">
+            <span class="sr-only">Monthly visits (optional)</span>
+            <select name="visits">
+              <option value="" disabled selected>Monthly visits (optional)</option>
+              <option value="1.000.000">1.000.000</option>
+              <option value="1.500.000">1.500.000</option>
+              <option value="2.000.000">2.000.000</option>
+              <option value="3.000.000">3.000.000</option>
+              <option value="5.000.000">5.000.000</option>
+              <option value="10.000.000">10.000.000</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span class="sr-only">Storage needs (optional)</span>
+            <select name="storage">
+              <option value="" disabled selected>Storage needs (optional)</option>
+              <option value="120GB">120GB</option>
+              <option value="240GB">240GB</option>
+              <option value="480GB">480GB</option>
+              <option value="1T">1T</option>
+              <option value="2T">2T</option>
+              <option value="4T">4T</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="field field--full">
+          <span class="sr-only">Describe your needs</span>
+          <textarea name="message" rows="4" placeholder="Describe your needs" required></textarea>
+        </label>
+
+        <label class="checkbox">
+          <input type="checkbox" name="privacyConsent" required />
+          <span>
+            I have read and understand the
+            <a href="https://pressidium.com/legal/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
+            and I consent to communications from Pressidium regarding this inquiry.
+          </span>
+        </label>
+
+        <button type="submit" class="submit">SEND MESSAGE</button>
+      </form>
+
+      <div id="thank-you" class="js-thank-you thank-you" hidden>
+        <h2>Thank you for contacting us!</h2>
+        <p>A member of our Sales Engineering Team will get in touch with you shortly to discuss your needs.</p>
+      </div>
+    </main>
+
+    <script src="./form.js" defer></script>
+    <script src="./webmcp-tools.js" defer></script>
+  </body>
+</html>
