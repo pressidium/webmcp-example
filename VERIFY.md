@@ -39,4 +39,4 @@ console.assert(document.getElementById('thank-you').hidden === false);
 
 - Introspection lives on `navigator.modelContextTesting` (separate from `navigator.modelContext`).
 - `tool.inputSchema` arrives as a JSON string, not a parsed object.
-- The same checks are repeated in narrative form in `article.md` under "A quick console smoke test".
+- The same checks are repeated in narrative form in `ARTICLE.md` under "A quick console smoke test".

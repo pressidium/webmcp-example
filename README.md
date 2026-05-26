@@ -10,7 +10,7 @@ WebMCP is a new browser-native API (`navigator.modelContext`) that lets a page e
 
 ## Read the article
 
-The full walkthrough is in **[`article.md`](./article.md)** — what WebMCP is, why it matters, both API surfaces (imperative JavaScript and declarative HTML), best practices, and a worked example showing a real agent (Gemini) filling and submitting the form.
+The full walkthrough is in **[`ARTICLE.md`](./ARTICLE.md)** — what WebMCP is, why it matters, both API surfaces (imperative JavaScript and declarative HTML), best practices, and a worked example showing a real agent (Gemini) filling and submitting the form.
 
 ## Run it locally
 
@@ -38,7 +38,7 @@ The `contact_sales` tool registers automatically. Without WebMCP support, the fo
 
 ```
 .
-├── article.md              The tutorial walkthrough
+├── ARTICLE.md              The tutorial walkthrough
 ├── demo/
 │   ├── index.html          Imperative API version
 │   ├── declarative.html    Declarative API version
