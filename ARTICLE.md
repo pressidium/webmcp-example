@@ -22,7 +22,7 @@ This article walks through adding WebMCP to a real, ordinary contact form, the k
 
 ## What you'll build
 
-A "Contact our Sales Team" form on [Pressidium®](https://pressidium.com/), exposed as a single WebMCP tool called `contact_sales`. It's the same form we use to talk to prospects about [managed WordPress hosting](https://pressidium.com/wordpress-hosting-plans/), now agent-callable. An agent calls it with structured arguments; the tool fills and submits the form on the user's behalf, no DOM scraping required.
+A "Contact Sales" form exposed as a single WebMCP tool called `contact_sales`. It's the same form we use to talk to prospects about [managed WordPress hosting](https://pressidium.com/wordpress-hosting-plans/), now agent-callable. An agent calls it with structured arguments; the tool fills and submits the form on the user's behalf, no DOM scraping required.
 
 ![The form we're starting with](./assets/contact-form.png)
 
